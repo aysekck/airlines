@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Database Assignment</title>
+  <title>Airlines</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -195,7 +195,7 @@ $(document).ready(function () {
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="./Orders.html" class="nav-link">Orders</a></li>
+        <li class="nav-item"><a href="./airplanes.html" class="nav-link">Airplanes</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
         <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -227,12 +227,12 @@ $(document).ready(function () {
 
     <div class=“row”>
       <div class=“col-md-12”>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newCustomerModal">New Customer</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newCustomerModal">New Airplanes</button>
       </div>
     </div>
 
     <div class="col">
-      <h2>Customer List</h2>
+      <h2>Airplanes List</h2>
 
       <table id="myTable"></table>
 
@@ -267,17 +267,17 @@ $(document).ready(function () {
 
           <form data-formtoggle="validator" role="form" id="newCustomerForm" onsubmit="return false;">
             <div class="form-group">
-              <label for="firstName" class="control-label">First Name of Customer</label>
+              <label for="firstName" class="control-label">Type of Airplane</label>
               <input type="text" class="form-control" id="firstName" placeholder="Enter a first name of customer" data-error="DAT IS GEEN NAAM BOYO!" required>
             </div>
 
             <div class="form-group">
-              <label for="lastName" class="control-label">Last Name of Customer</label>
+              <label for="lastName" class="control-label">Plate of Airplane</label>
               <input type="text" class="form-control" id="lastName" placeholder="whats last name?" required>
             </div>
 
             <div class="form-group">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Save</button>
               <button id="closeButton" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
 

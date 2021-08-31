@@ -1,13 +1,19 @@
 package com.example.Airlines.models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Airplane {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String type;
     private String plateName;
     private int fuel;
+
 
     public Airplane(int id, String type, String plateName, int fuel) {
         this.id = id;
@@ -18,6 +24,7 @@ public class Airplane {
     public Airplane(){
 
     }
+
     public int getId() {
         return id;
     }
